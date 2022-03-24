@@ -34,3 +34,11 @@ span.input-group-text {
 table {
     font-size: 10px;
 }
+
+.navbar {
+    background-color: #8ecae6;
+}
+
+span.input-group-text {
+    background-color: #ffb703;
+}

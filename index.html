@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="icon" href="/tabelIdeal.jpg" type="jpg">
+
     <script src="script.js"></script>
 
     <title>Calculator Badan Ideal</title>
@@ -19,7 +21,7 @@
 
         <!-- navbar -->
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="#">Calculator Badan Ideal</a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,13 +69,13 @@
                     <!-- Perkenalan -->
                     <div class="row">
                         <div class="col">
-                            <h5 class="text-center">Metode Body Mass Index (BMI)</h5>
+                            <h5 class="text-center">= Metode Body Mass Index (BMI) =</h5>
                         </div>
                     </div>
 
                     <!-- tabel badan ideal -->
                     <div class="row">
-                        <div class="col p-3">
+                        <div class="col p-3" style="overflow-x:auto;">
                             <table class="table table-bordered" id="tableBadanIdeal">                
                             </table>
                         </div>
@@ -86,38 +88,38 @@
                         </div>
                     </div>
                     <div class="row mb-4 p-3">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Tinggi Badan :</span>
                                 <input type="number" class="cekFormBMI form-control" aria-label="Text input with dropdown button" id="tinggiBadanBMI">
                                 <span class="input-group-text">cm</span>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Berat Badan :</span>
                                 <input type="number" class="cekFormBMI form-control" aria-label="Text input with dropdown button" id="beratBadanBMI">
                                 <span class="input-group-text">kg</span>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <div id="hasilBMI"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-5 offset-1">
+                <div class="col-xl-6">
                      <!-- Metode Broca-->
                     <!-- Perkenalan -->
                     <div class="row mb-3">
                         <div class="col">
-                            <h5 class="text-center">Metode Broca</h5>
+                            <h5 class="text-center">====== Metode Broca ======</h5>
                         </div>
                     </div>
     
                     <!-- form input Broca -->
-                    <div class="row mb-5">
-                        <div class="col-6">
+                    <div class="row mb-3 p-3">
+                        <div class="col-sm-6">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Jenis Kelamin :</span>
                                 <select class="cekFormBroca form-select" id="jenisKelaminBroca">
@@ -126,7 +128,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Tinggi Badan :</span>
                                 <input type="number" class="cekFormBroca form-control" aria-label="Text input with dropdown button" id="tinggiBadanBroca">
@@ -209,7 +211,7 @@
                         // elements[i].style.backgroundColor = "white";
                         elements[i].style.border = "solid 4px red";
                         elements[i].style.fontWeight = "900";
-                        elements[i].style.textShadow = "2px 2px 1px white";;
+                        elements[i].style.textShadow = "1px 1px 3px white";;
                     }
 
                 }
