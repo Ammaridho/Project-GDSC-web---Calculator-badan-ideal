@@ -26,3 +26,11 @@ td._40, td._41, td._42, td#obesitasEkstrim{
     color: rgb(0,0,0);
     background-color: red;
 }
+
+span.input-group-text {
+    font-size: 12px;
+}
+
+table {
+    font-size: 10px;
+}

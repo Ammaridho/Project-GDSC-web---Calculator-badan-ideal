@@ -15,14 +15,14 @@
     <title>Calculator Badan Ideal</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- navbar -->
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">CBI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Calculator Badan Ideal</a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,7 +40,7 @@
                             <a class="nav-link disabled">Disabled</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 </div>
             </nav>
         </div>
@@ -48,94 +48,109 @@
         <!-- jumbotron -->
         <div class="row mb-5 mt-5">
             <div class="jumbotron jumbotron-fluid">
-                <div class="container">
+                <div class="container text-center">
                   <h1 class="display-4">Ketahui Status Ideal Badan Anda Sekarang!</h1>
                   <p class="lead">'Badan ideal sangat penting demi menjaga kebugaran dan kesehatan kita'</p>
                 </div>
             </div>
         </div>
 
-        <!-- Metode BMI -->
-            <!-- tabel badan ideal -->
-            <div class="row mb-5 p-3">
-                <h2 class="text-center">Metode Body Mass Index (BMI)</h2>
-                <table class="table table-bordered" id="tableBadanIdeal">                
-                </table>
-            </div>
+        <hr class="mb-4" style="border: solid 2px black;">
 
-            <!-- calculator badan Ideal -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h2>Cek Sekarang!</h2>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-3 offset-1">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Jenis Kelamin :</span>
-                        <select class="cekForm form-select" id="jenisKelamin">
-                            <option value="pria">Pria</option>
-                            <option value="wanita">Wanita</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Tinggi Badan :</span>
-                        <input type="number" class="cekForm form-control" aria-label="Text input with dropdown button" id="tinggiBadan">
-                        <span class="input-group-text">cm</span>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Berat Badan :</span>
-                        <input type="number" class="cekForm form-control" aria-label="Text input with dropdown button" id="beratBadan">
-                        <span class="input-group-text">kg</span>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid">
 
-            <!-- hasil -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h2>Hasil!</h2>
-                </div>
-            </div>
-
-        <!-- Metode Broca-->
-            <!-- Perkenalan -->
+            <!-- membagi 2 -->
             <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Metode Broca</h2>
+
+                <div class="col-xl-6">
+                    <!-- Metode BMI -->
+                    <!-- Perkenalan -->
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="text-center">Metode Body Mass Index (BMI)</h5>
+                        </div>
+                    </div>
+
+                    <!-- tabel badan ideal -->
+                    <div class="row">
+                        <div class="col p-3">
+                            <table class="table table-bordered" id="tableBadanIdeal">                
+                            </table>
+                        </div>
+                    </div>
+    
+                    <!-- input form BMI -->
+                    <div class="row">
+                        <div class="col">
+                            <h5>Cek Sekarang!</h5>
+                        </div>
+                    </div>
+                    <div class="row mb-4 p-3">
+                        <div class="col-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Tinggi Badan :</span>
+                                <input type="number" class="cekFormBMI form-control" aria-label="Text input with dropdown button" id="tinggiBadanBMI">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Berat Badan :</span>
+                                <input type="number" class="cekFormBMI form-control" aria-label="Text input with dropdown button" id="beratBadanBMI">
+                                <span class="input-group-text">kg</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div id="hasilBMI"></div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-xl-5 offset-1">
+                     <!-- Metode Broca-->
+                    <!-- Perkenalan -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <h5 class="text-center">Metode Broca</h5>
+                        </div>
+                    </div>
+    
+                    <!-- form input Broca -->
+                    <div class="row mb-5">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Jenis Kelamin :</span>
+                                <select class="cekFormBroca form-select" id="jenisKelaminBroca">
+                                    <option value="pria">Pria</option>
+                                    <option value="wanita">Wanita</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Tinggi Badan :</span>
+                                <input type="number" class="cekFormBroca form-control" aria-label="Text input with dropdown button" id="tinggiBadanBroca">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- hasil -->
+                    <div class="row">
+                        <div class="col">
+                            <div id="hasilBorca"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- form input -->
-            <div class="row mb-5">
-                <div class="col-3 offset-1">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Jenis Kelamin :</span>
-                        <select class="cekForm form-select" id="jenisKelamin">
-                            <option value="pria">Pria</option>
-                            <option value="wanita">Wanita</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Tinggi Badan :</span>
-                        <input type="number" class="cekForm form-control" aria-label="Text input with dropdown button" id="tinggiBadan">
-                        <span class="input-group-text">cm</span>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Berat Badan :</span>
-                        <input type="number" class="cekForm form-control" aria-label="Text input with dropdown button" id="beratBadan">
-                        <span class="input-group-text">kg</span>
-                    </div>
-                </div>
-            </div>
+        </div>
+        
+
+        <hr class="mt-3" style="border: solid 2px black;">
+
+       
         
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -146,32 +161,89 @@
     // } -->
     <script>
         
-        // Form dan Perhitungan ===============================================================================
+        // Form dan Perhitungan BMI ===============================================================================
 
         // dengan class harus menggunakan for untuk memetakan tiap tiap class
-        var buttonCek = document.getElementsByClassName('cekForm');
+        var buttonCek = document.getElementsByClassName('cekFormBMI');
         for (let i = 0; i < buttonCek.length; i++) {
 
             // button yang dipetakan jika diberi input jalankan function
             buttonCek[i].addEventListener("input",function () {
 
                 // ambil data
-                jk = document.getElementById('jenisKelamin').value;
-                tb = document.getElementById('tinggiBadan').value;
-                bb = document.getElementById('beratBadan').value;
+                tb = document.getElementById('tinggiBadanBMI').value;
+                bb = document.getElementById('beratBadanBMI').value;
 
                 // cek form terisi semua
-                if(jk != '' && tb != '' && bb != ''){
+                if( tb != '' && bb != ''){
+                    // perhitungan
+                    let hasilBMI = Math.round(bb/((tb/100)**2)); 
+
+                    if (hasilBMI < 20) {
+                        let simpulan = 'kurus';
+                        document.getElementById('hasilBMI').innerHTML = `<h4 class="text-center">`+hasilBMI+` poin (`+simpulan+`)</h4>`;
+                    }else if(hasilBMI < 24){
+                        let simpulan = 'Ideal';
+                        document.getElementById('hasilBMI').innerHTML = `<h4 class="text-center">`+hasilBMI+` poin (`+simpulan+`)</h4>`;
+                    }else if(hasilBMI < 29){
+                        let simpulan = 'Gemuk';
+                        document.getElementById('hasilBMI').innerHTML = `<h4 class="text-center">`+hasilBMI+` poin (`+simpulan+`)</h4>`;
+                    }else if(hasilBMI < 39){
+                        let simpulan = 'Obesitas';
+                        document.getElementById('hasilBMI').innerHTML = `<h4 class="text-center">`+hasilBMI+` poin (`+simpulan+`)</h4>`;
+                    }else{
+                        let simpulan = 'Obesitas Ekstrim';
+                        document.getElementById('hasilBMI').innerHTML = `<h4 class="text-center">`+hasilBMI+` poin (`+simpulan+`)</h4>`;
+                    }  
+
+                    // print nilai hasil
+
+                    // ubah warna di table
+                    elementsbefore = document.getElementsByClassName('nilaiIdeal');
+                    for (let i = 0; i < elementsbefore.length; i++) {
+                        elementsbefore[i].removeAttribute('style');
+                    }
+
+                    var elements = document.getElementsByClassName(`_`+hasilBMI);
+                    for (let i = 0; i < elements.length; i++) {
+                        // elements[i].style.backgroundColor = "white";
+                        elements[i].style.border = "solid 4px red";
+                        elements[i].style.fontWeight = "900";
+                        elements[i].style.textShadow = "2px 2px 1px white";;
+                    }
+
+                }
+            })
+        }
+
+        // Form dan Perhitungan BROCA ===============================================================================
+
+        // dengan class harus menggunakan for untuk memetakan tiap tiap class
+        var buttonCek = document.getElementsByClassName('cekFormBroca');
+        for (let i = 0; i < buttonCek.length; i++) {
+
+            // button yang dipetakan jika diberi input jalankan function
+            buttonCek[i].addEventListener("input",function () {
+
+                // ambil data
+                jk = document.getElementById('jenisKelaminBroca').value;
+                tb = document.getElementById('tinggiBadanBroca').value;
+
+                // cek form terisi semua
+                if(jk != '' && tb != ''){
                     
                     // cek jenis kelamin
+                    // pria
                     if(jk == 'pria'){
-
+                        let hasilBorca = (tb-100)-((tb-100)*10/100);
+                        document.getElementById('hasilBorca').innerHTML = `<h5 class="text-center">Berat Badan Yang baik untuk anda adalah :</h5><br><h3 class="text-center">`+hasilBorca+` kg</h3>`;
+                    // wanita
                     }else{
-
+                        let hasilBorca = (tb-100)-((tb-100)*15/100);
+                        document.getElementById('hasilBorca').innerHTML = `<h5 class="text-center">Berat Badan Yang baik untuk anda adalah :</h5><br><h3 class="text-center">`+hasilBorca+` kg</h3>`;
                     }
                 }
             })
-            
         }
 
         // Tabel Ideal ========================================================================================
@@ -228,38 +300,38 @@
                     <td>Tinggi (cm)</td>
                     <td id="kurus" colspan="3">Kurus</td>
                     <td id="ideal" colspan="4">Ideal</td>
-                    <td id="beratBerlebih" colspan="5">Berat Berlebih</td>
+                    <td id="beratBerlebih" colspan="5">Gemuk</td>
                     <td id="obesitas" colspan="7">Obesitas</td>
                     <td id="obesitasEkstrim" colspan="5">Obesitas Ekstrim</td>
                 </tr>`;
 
             data.forEach(e => {
             document.getElementById('tableBadanIdeal').insertRow(-1).innerHTML = `<tr>
-                <td class='_`+e[0]+`'>`+e[0]+`</td>
-                <td class='_`+e[1]+`'>`+e[1]+`</td>
-                <td class='_`+e[2]+`'>`+e[2]+`</td>
-                <td class='_`+e[3]+`'>`+e[3]+`</td>
-                <td class='_`+e[4]+`'>`+e[4]+`</td>
-                <td class='_`+e[5]+`'>`+e[5]+`</td>
-                <td class='_`+e[6]+`'>`+e[6]+`</td>
-                <td class='_`+e[7]+`'>`+e[7]+`</td>
-                <td class='_`+e[8]+`'>`+e[8]+`</td>
-                <td class='_`+e[9]+`'>`+e[9]+`</td>
-                <td class='_`+e[10]+`'>`+e[10]+`</td>
-                <td class='_`+e[11]+`'>`+e[11]+`</td>
-                <td class='_`+e[12]+`'>`+e[12]+`</td>
-                <td class='_`+e[13]+`'>`+e[13]+`</td>
-                <td class='_`+e[14]+`'>`+e[14]+`</td>
-                <td class='_`+e[15]+`'>`+e[15]+`</td>
-                <td class='_`+e[16]+`'>`+e[16]+`</td>
-                <td class='_`+e[17]+`'>`+e[17]+`</td>
-                <td class='_`+e[18]+`'>`+e[18]+`</td>
-                <td class='_`+e[19]+`'>`+e[19]+`</td>
-                <td class='_`+e[20]+`'>`+e[20]+`</td>
-                <td class='_`+e[21]+`'>`+e[21]+`</td>
-                <td class='_`+e[22]+`'>`+e[22]+`</td>
-                <td class='_`+e[23]+`'>`+e[23]+`</td>
-                <td class='_`+e[24]+`'>`+e[24]+`</td>
+                <td class='nilaiIdeal _`+e[0]+`'>`+e[0]+`</td>
+                <td class='nilaiIdeal _`+e[1]+`'>`+e[1]+`</td>
+                <td class='nilaiIdeal _`+e[2]+`'>`+e[2]+`</td>
+                <td class='nilaiIdeal _`+e[3]+`'>`+e[3]+`</td>
+                <td class='nilaiIdeal _`+e[4]+`'>`+e[4]+`</td>
+                <td class='nilaiIdeal _`+e[5]+`'>`+e[5]+`</td>
+                <td class='nilaiIdeal _`+e[6]+`'>`+e[6]+`</td>
+                <td class='nilaiIdeal _`+e[7]+`'>`+e[7]+`</td>
+                <td class='nilaiIdeal _`+e[8]+`'>`+e[8]+`</td>
+                <td class='nilaiIdeal _`+e[9]+`'>`+e[9]+`</td>
+                <td class='nilaiIdeal _`+e[10]+`'>`+e[10]+`</td>
+                <td class='nilaiIdeal _`+e[11]+`'>`+e[11]+`</td>
+                <td class='nilaiIdeal _`+e[12]+`'>`+e[12]+`</td>
+                <td class='nilaiIdeal _`+e[13]+`'>`+e[13]+`</td>
+                <td class='nilaiIdeal _`+e[14]+`'>`+e[14]+`</td>
+                <td class='nilaiIdeal _`+e[15]+`'>`+e[15]+`</td>
+                <td class='nilaiIdeal _`+e[16]+`'>`+e[16]+`</td>
+                <td class='nilaiIdeal _`+e[17]+`'>`+e[17]+`</td>
+                <td class='nilaiIdeal _`+e[18]+`'>`+e[18]+`</td>
+                <td class='nilaiIdeal _`+e[19]+`'>`+e[19]+`</td>
+                <td class='nilaiIdeal _`+e[20]+`'>`+e[20]+`</td>
+                <td class='nilaiIdeal _`+e[21]+`'>`+e[21]+`</td>
+                <td class='nilaiIdeal _`+e[22]+`'>`+e[22]+`</td>
+                <td class='nilaiIdeal _`+e[23]+`'>`+e[23]+`</td>
+                <td class='nilaiIdeal _`+e[24]+`'>`+e[24]+`</td>
                 </tr>`;
         });
     </script>
