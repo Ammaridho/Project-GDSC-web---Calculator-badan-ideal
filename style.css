@@ -3,7 +3,7 @@ td._19, td._18, td._17, td._16, td._15, td._14, td._13, td._12, td#kurus{
     background-color: rgba(0, 0, 255, 0.534);
 }
 
-td#kurus, td#ideal, td#beratBerlebih, td#obesitas, td#obesitasEkstrim{
+td#kurus, td#ideal, td#gemuk, td#obesitas, td#obesitasEkstrim{
     font-weight: bolder;
 }
 
@@ -12,7 +12,7 @@ td._20, td._21, td._22, td._23, td._24, td#ideal{
     background-color: green;
 }
 
-td._25, td._26, td._27, td._28, td._29, td#beratBerlebih{
+td._25, td._26, td._27, td._28, td._29, td#gemuk{
     color: rgb(0,0,0);
     background-color: yellow;
 }
@@ -41,4 +41,25 @@ table {
 
 span.input-group-text {
     background-color: #ffb703;
+}
+
+/* #bagianBMI {
+    background-color: white;
+}
+#bagianBorca {
+    background-color: white;
+} */
+
+/* .jumbotron {
+    background-color: #219ebc;
+} */
+
+body{
+    background-color: #e9d8a6;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
